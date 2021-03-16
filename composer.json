@@ -1,0 +1,21 @@
+{
+  "name": "omentes/telegram-bot-command-wrapper",
+  "description": "Useful command wrapper for longman/telegram-bot",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "omentes",
+      "email": "setnemo@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.0.3",
+    "longman/telegram-bot": "^0.70.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "TelegramBot\\CommandWrapper\\": "src/"
+    }
+  }
+}
