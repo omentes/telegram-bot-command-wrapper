@@ -13,9 +13,9 @@ use TelegramBot\CommandWrapper\Exception\SupportTypeException;
  * Class ResponseDirector
  * @package TelegramBot\CommandWrapper
  */
-class ResponseDirector
+class ResponseDirector implements ResponseInterface
 {
-    private const SUPPORT_TYPES = [
+    protected const SUPPORT_TYPES = [
         'sendMessage',
         'sendDocument',
         'sendVoice',

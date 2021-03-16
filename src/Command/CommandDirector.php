@@ -10,7 +10,7 @@ use TelegramBot\CommandWrapper\Service\EmptyCallbackService;
  * Class CommandDirector
  * @package TelegramBot\CommandWrapper\Command
  */
-class CommandDirector
+class CommandDirector implements DirectorInterface
 {
     /**
      * CommandDirector constructor.
@@ -35,7 +35,7 @@ class CommandDirector
     public function makeService(): CommandInterface
     {
         return match($this->getOptions()->getCommand()) {
-            default =>new EmptyCallbackService($this->getOptions()),
+            default => new EmptyCallbackService($this->getOptions()),
         };
     }
 }
