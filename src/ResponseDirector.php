@@ -52,6 +52,7 @@ class ResponseDirector implements ResponseInterface
             'sendVoice'           => Request::sendVoice($data),
             'editMessageText'     => Request::editMessageText($data),
             'answerCallbackQuery' => Request::answerCallbackQuery($data),
+            'sendToActiveChats'   => Request::answerCallbackQuery($data),
         };
     }
 
